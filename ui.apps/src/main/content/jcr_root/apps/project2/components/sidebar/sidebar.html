@@ -1,0 +1,30 @@
+
+
+<h1>TASK #3</h1>
+<h1>TASK #3</h1>
+<sly data-sly-use.one="com.adobe.aem.guides.project2.core.models.Sidebarsling">
+    <div>Logo Path: ${one.logoPath}</div>
+    <div>Logo Mobile Image : ${one.logomobileimage}</div>
+    <div>Logo Path: ${one.logolink}</div>
+    <div>Enable Switch: ${one.enableswitch}</div>
+    <div>Country: ${one.country}</div>
+
+	<div data-sly-list.hlinks="${one.multifield}">
+    <p> Name : ${hlinks.name}>
+    <p> Image : ${hlinks.image}>
+    </div>
+
+    <div data-sly-list.navigation="${one.navigationmultifield}">
+    	<p>Desktop Icon:${navigation.desktopicon}</p>
+    	<p>Mobile Icon:${navigation.mobileicon}</p>
+
+    	<div data-sly-list.nestednavi="${navigation.nestedmultifield}">
+        	<p>Navigation URL :${nestednavi.navigationurl}</p>
+            </div>
+    </div>
+
+
+</sly>
+
+
+

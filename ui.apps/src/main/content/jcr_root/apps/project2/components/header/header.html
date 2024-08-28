@@ -1,0 +1,16 @@
+<h1>TASK #1 (HEADER COMPONENT)</h1>
+
+
+<sly data-sly-use.model="com.adobe.aem.guides.project2.core.models.HeaderSlingModel">
+    <div> Pathfield :${model.pathField}</div>
+     <div> Textfield :${model.textField}</div>
+     <div> Checkbox:${model.checkbox}</div>
+
+
+<div>------------MULTIFIELD----------------</div>
+
+    <sly data-sly-repeat.item="${model.multifield}">
+      <p>Date Picker:${item.datePicker}</p>
+        <p>Text:${item.multiText}</p>
+    </sly>
+</sly>
